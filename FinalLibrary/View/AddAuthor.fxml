@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="" focusTraversable="true" prefHeight="393.0" prefWidth="488.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.SystemController">
+  <items>
+    <GridPane alignment="CENTER" hgap="10.0" prefHeight="355.0" prefWidth="311.0" vgap="10.0">
+      <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <TextField fx:id="FirstNameText"  GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Last Name" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <TextField  fx:id="LastNameText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+  
+      <padding>
+        <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+      <Label text="Credential" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <TextField fx:id="AuthorCredentialText" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Phone" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      <TextField fx:id="AuthorPhoneText" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label text="City:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      <Label text="Address" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+      <Label text="State" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+      <Label text="Zip" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+      <Button onAction="#AddAuthorButtonAction" text="Add Author" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label text="Add Authors" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+          <Font size="16.0" />
+        </font>
+      </Label>
+      <TextField fx:id="AuthorCityText" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <TextField fx:id="AuthorAddressText" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="AthourStateText" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="AuthorZipText" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+    </GridPane>
+  </items>
+</SplitPane>

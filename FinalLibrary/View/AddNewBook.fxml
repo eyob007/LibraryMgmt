@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="" focusTraversable="true" prefHeight="393.0" prefWidth="488.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.SystemController">
+  <items>
+    <GridPane alignment="CENTER" hgap="10.0" prefHeight="355.0" prefWidth="311.0" vgap="10.0">
+      <Text id="welcome-text" fill="#293300" scaleX="0.995724048031396" scaleY="0.9216108091314632" strokeLineCap="SQUARE" text="Add New Book" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+        <font>
+          <Font size="16.0" />
+        </font>
+      </Text>
+      <Label text="ISBN" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <TextField fx:id="isBNFieldBook" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Title" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <TextField fx:id="titleFieldBook" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button onAction="#AddBookButtonAction" text="Add Book" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label text="Max CheckOut Length" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <TextField fx:id="MaxCharFieldBook" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button onAction="#AddAuthorViewButtonAction" text="Add Authors" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      <Button onAction="#ViewAuthorButtonAction" text="ViewAuthors" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ListView fx:id="ListViewAuthor" prefHeight="154.0" prefWidth="436.0" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.rowSpan="1" />
+      <!-- <TableView fx:id="TableViewAuthor" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="5" GridPane.rowSpan="2">-->
+      <!--  <columns>-->
+      <!--  <TableColumn prefWidth="75.0" text="Column X" />-->
+      <!--  <TableColumn prefWidth="75.0" text="Column X" />-->
+      <!--  </columns> -->
+      <!--  </TableView>-->
+      <columnConstraints>
+        <ColumnConstraints maxWidth="109.0" prefWidth="94.0" />
+        <ColumnConstraints maxWidth="371.0" prefWidth="332.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+    </GridPane>
+  </items>
+</SplitPane>

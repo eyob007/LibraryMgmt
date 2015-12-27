@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="" focusTraversable="true" prefHeight="393.0" prefWidth="488.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.SystemController">
+  <items>
+    <GridPane alignment="CENTER" hgap="10.0" prefHeight="391.0" prefWidth="428.0" vgap="10.0">
+      <Text id="welcome-text" fill="#293300" scaleX="0.995724048031396" scaleY="0.9216108091314632" strokeLineCap="SQUARE" text="Search And Add a Copy of Book" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+        <font>
+          <Font size="16.0" />
+        </font>
+      </Text>
+      <Label text="ISBN" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <TextField fx:id="ISBNidTextBox" prefWidth="280.786376953125" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="109.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="317.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="21.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="16.0" />
+      </rowConstraints>
+      <HBox alignment="BOTTOM_RIGHT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button onAction="#handleISBNSearchButtonAction" text="Search" />
+      </HBox>
+      <Button fx:id="CopyBookButton" onAction="#handleCopyToBookAction" text="Add Copy" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <ListView fx:id="ListViewBook" prefHeight="48.0" prefWidth="339.0" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.rowSpan="3" />
+    </GridPane>
+  </items>
+</SplitPane>

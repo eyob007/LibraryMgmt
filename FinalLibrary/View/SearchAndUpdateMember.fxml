@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="" focusTraversable="true" minHeight="415.0" prefHeight="506.0" prefWidth="537.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.SystemController">
+  <items>
+    <GridPane alignment="CENTER" hgap="10.0" minHeight="470.0" prefHeight="470.0" prefWidth="466.0" vgap="12.0">
+      <Text id="welcome-text" fill="#293300" scaleX="0.995724048031396" scaleY="0.9216108091314632" strokeLineCap="SQUARE" text="Search and Update Library Member" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <font>
+          <Font size="16.0" />
+        </font>
+      </Text>
+      <Label text="Member ID" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <TextField fx:id="searchedMemberID" prefWidth="280.786376953125" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      </columnConstraints>
+      <HBox alignment="BOTTOM_RIGHT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label text="Member ID" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+      <Label text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+      <Label text="Last Name" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+      <Label prefWidth="56.0" text="Street" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+      <Label text="City" GridPane.columnIndex="0" GridPane.rowIndex="14" />
+      <Label text="State" GridPane.columnIndex="0" GridPane.rowIndex="15" />
+      <Label text="Zip" GridPane.columnIndex="0" GridPane.rowIndex="16" />
+      <Label text="Telephone" GridPane.columnIndex="0" GridPane.rowIndex="17" />
+      <TextField fx:id="memberIDUpdateText" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+        <GridPane.margin>
+          <Insets />
+        </GridPane.margin>
+      </TextField>
+      <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <TextField fx:id="firstNameTextUpdate" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <TextField fx:id="lastNameTextUpdate" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+      <TextField fx:id="streetTextUpdate" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+      <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <TextField fx:id="cityTextUpdate" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <TextField fx:id="stateTextUpdate" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+      <TextField fx:id="zipTextUpdate" prefHeight="13.29022216796875" prefWidth="103.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+      <TextField fx:id="telephoneTextUpdate" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+      <Button id="memberSearchButton" mnemonicParsing="false" onAction="#handleSearchMemberButtonAction" text="Search" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="updateButton" mnemonicParsing="false" onAction="#handleUpdateButtonAction" text="Update" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+      <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="10.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="16.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="22.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="21.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="0.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="18.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="16.0" />
+        <RowConstraints maxHeight="22.0" prefHeight="21.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="18.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="16.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+        <RowConstraints maxHeight="21.0" prefHeight="0.0" />
+      </rowConstraints>
+    </GridPane>
+  </items>
+</SplitPane>
